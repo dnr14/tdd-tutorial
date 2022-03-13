@@ -1,5 +1,14 @@
+import { PageHeader } from 'components';
+import styled from 'styled-components';
+
 function App() {
-  return <div>TDD 테스트</div>;
+  return (
+    <Container>
+      <PageHeader />
+    </Container>
+  );
 }
+
+const Container = styled.div``;
 
 export default App;
