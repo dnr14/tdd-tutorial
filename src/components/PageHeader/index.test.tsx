@@ -15,7 +15,7 @@ describe('<PageHeader>', () => {
   it('PageHeader 컴포넌트 랜더링', () => {
     const history = createMemoryHistory();
     history.push('/');
-    render(
+    const { container } = render(
       <Router history={history}>
         <PageHeader />
       </Router>,
@@ -25,6 +25,7 @@ describe('<PageHeader>', () => {
     const head_text = screen.getByText(_text);
     expect(head_text).toBeInTheDocument();
     expect(screen.queryByText('돌아가기')).not.toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 
   it('/add URL move', () => {

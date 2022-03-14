@@ -24,6 +24,27 @@ export const PageHeader = () => {
   );
 };
 
-const Goback = styled(Link)``;
-const Container = styled.div``;
-const Title = styled.div``;
+const Goback = styled(Link)`
+  padding: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  position: absolute;
+  left: 20px;
+`;
+const Container = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e40ff;
+`;
+const Title = styled.div`
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+`;
