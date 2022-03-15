@@ -1,10 +1,12 @@
 import { PageHeader } from 'components';
+import { List } from 'pages';
 import styled from 'styled-components';
 
 function App() {
   return (
     <Container>
-      <PageHeader />
+      {/* <PageHeader /> */}
+      <List />
     </Container>
   );
 }
