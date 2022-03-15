@@ -9,6 +9,7 @@ describe('<Button>', () => {
     const label = screen.getByText('추가');
     expect(label).toBeInTheDocument();
     expect(container).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
   it('<Button> background, hoverColor change Test', () => {
     const backgroundColor = '#304ffe';
