@@ -9,6 +9,13 @@ function App() {
   );
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+  min-height: 100vh;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
 
 export default App;
