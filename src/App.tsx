@@ -1,12 +1,26 @@
 import { PageHeader } from 'components';
-import { List } from 'pages';
+import { Add, Detail, List, NotFound } from 'pages';
+import { Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
 
 function App() {
   return (
     <Container>
-      {/* <PageHeader /> */}
-      <List />
+      <PageHeader />
+      <Switch>
+        <Route exact path={'/'}>
+          <List />
+        </Route>
+        <Route path={'/add'}>
+          <Add />
+        </Route>
+        <Route path="/detail/:id">
+          <Detail />
+        </Route>
+        <Route>
+          <NotFound />
+        </Route>
+      </Switch>
     </Container>
   );
 }
